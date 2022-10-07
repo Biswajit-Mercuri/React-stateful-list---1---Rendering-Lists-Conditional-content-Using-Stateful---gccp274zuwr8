@@ -25,7 +25,8 @@ const data = {
     'Adventures of Saiman',
     'Adventures of Shaktiman'
   ]
-}
+};
+
 const App = () => {
 
   const [option, setOption] = useState(null);
@@ -44,7 +45,7 @@ const App = () => {
         <option value={2021}>2021</option>
         <option value={2022}>2022</option>
       </select>
-      <div>
+      <div id='selected-year' style={{marginTop: 5}}>
         {option === null ? "No year selected" : "Selected year-" + option}
       </div>
       {option === null ? null : (
